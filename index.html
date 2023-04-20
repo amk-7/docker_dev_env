@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Acheter des tickets</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+	<script src="./index.js" async></script>
+</head>
+<body>
+	<header>
+		<h1>Acheter des tickets pour des concerts</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Acheter un ticket</h2>
+			<form id="ticket-form">
+				<label for="nom">Nom :</label>
+				<input type="text" id="nom" required>
+				<label for="prenom">Prénom :</label>
+				<input type="text" id="prenom" required>
+				<label for="date-naissance">Date de naissance :</label>
+				<input type="date" id="date-naissance" required>
+				<label for="concert">Choisir un concert :</label>
+				<select id="concert">
+					<option value="">-- Choisissez un concert --</option>
+				</select>
+				<button type="submit">Acheter</button>
+			</form>
+			<div id="resultat">
+                
+            </div>
+            <button id="imprimerBtn">Imprimer le ticket</button>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 KONDI & ADJANAYO</p>
+	</footer>
+</body>
+</html>
